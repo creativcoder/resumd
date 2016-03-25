@@ -1,37 +1,31 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>Realtime Markdown Viewer</title>
-    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css" rel="stylesheet">
+    <title>Resu|md - Realtime Resumes with Markdown</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.5/css/materialize.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.5/js/materialize.min.js"></script>
     <link href="style.css" rel="stylesheet">
-    <link rel="stylesheet" href="http://cdn.webix.com/edge/webix.css" type="text/css"> 
-    <script src="http://cdn.webix.com/edge/webix.js" type="text/javascript"></script>
 </head>
+<body>
+  
+<div class="md-content">
+          <label for="first_name">First Name</label>
+          <input placeholder="first name" id="first_name" type="text" class="validate">
+          <label for="first_name">Last Name</label>
+          <input placeholder="last name" id="first_name" type="text" class="validate">
+    <label for="first_name">Bio</label>
+    <textarea name="" id="pad" cols="30" rows="10">
+      A bit about yourself...
+    </textarea>
+</div>
 
-<body class="container-fluid">
+  <div class="parsed-md" id="markdown">
+  </div>
 
-    <section class="row">
-        <textarea class="col-md-6 full-height" id="pad">Write your text here..</textarea>
-        <div class="col-md-6 full-height" id="markdown"></div>
-    </section>
+  <div class="cogwheel">
+  
+  </div>
 
-<script type="text/javascript" charset="utf-8">
-        
-    webix.ui({
-  rows:[
-      { view:"template", 
-        type:"header", template:"My App!" },
-      { view:"datatable",
-        autoConfig:true,
-        editable:true,
-        data:{
-          title:"My Fair Lady", year:1964, votes:533848, rating:8.9, rank:5
-        }
-      }
-  ]
-});
-        
-        </script>
 
     <script src="https://cdn.rawgit.com/showdownjs/showdown/1.0.2/dist/showdown.min.js"></script>
     <script src="script.js"></script>
