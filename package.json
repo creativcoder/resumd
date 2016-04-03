@@ -1,15 +1,17 @@
 {
-  "name": "markedit",
-  "version": "1.0.0",
-  "description": "",
+  "name": "resumd",
+  "version": "0.1",
+  "description": "Realtime resume maker with markdown",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "",
-  "license": "ISC",
-  "dependencies": {
-    "ejs": "^2.3.4",
-    "express": "^4.13.3"
+  "license": "MIT",
+  "devDependencies": {
+    "jquery": "^2.2.2",
+    "lodash": "^4.7.0",
+    "materialize-css": "^0.97.6",
+    "webpack": "^1.12.14"
   }
 }
